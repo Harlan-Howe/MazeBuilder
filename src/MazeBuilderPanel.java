@@ -88,11 +88,9 @@ public class MazeBuilderPanel extends JPanel implements MazeConstants, MouseList
 	 */
 	public MazeCell cellAt(Place p)
 	{
-		MazeCell mc = null;
-		// TODO: Insert your code here.
-
-	    //----------------------------
-	    return mc;
+		if (inGrid(p))
+			return theGrid[p.row()][p.column()];
+		return null;
 	}
 	
 	
